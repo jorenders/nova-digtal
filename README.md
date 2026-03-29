@@ -8,6 +8,6 @@ Serve the repository root with any static file server, then open `index.html`.
 
 ## Deploy
 
-The repository includes a GitHub Pages workflow in `.github/workflows/deploy-pages.yml`.
-Once GitHub Pages is enabled for the repository and the main branch is pushed, the site
-should publish from the default Pages environment.
+Enable GitHub Pages in the repository settings and publish from the `main` branch root.
+After Pages finishes building, the site should be available at
+`https://jorenders.github.io/nova-digtal/`.
