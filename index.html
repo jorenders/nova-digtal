@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nova Digital | High-Performance Websites That Convert</title>
+    <title>Nova Digital</title>
     <meta
       name="description"
-      content="Nova Digital designs and builds premium websites engineered for speed, clarity, and conversion."
+      content=""
+      data-i18n-attr="content"
+      data-i18n-key="meta.description"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,43 +21,60 @@
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="#top" aria-label="Nova Digital home">
-          <span class="brand-mark"></span>
-          <span class="brand-text">Nova Digital</span>
+        <a class="brand" href="#top" aria-label="" data-i18n-attr="aria-label" data-i18n-key="brand.ariaLabel">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 172 36" role="img" aria-hidden="true">
+              <defs>
+                <linearGradient id="novaLogoGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8ff4ff" />
+                  <stop offset="100%" stop-color="#5f8dff" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M18 5 30 31H24.5L13.7 8.5V31H9V5h9ZM38 18c0-7.5 5.7-13.6 13.6-13.6 7.9 0 13.6 6.1 13.6 13.6S59.5 31.6 51.6 31.6C43.7 31.6 38 25.5 38 18Zm4.9 0c0 5.2 3.6 9.1 8.7 9.1s8.7-3.9 8.7-9.1-3.6-9.1-8.7-9.1-8.7 3.9-8.7 9.1Z"
+                fill="url(#novaLogoGlow)"
+              />
+              <path
+                d="M75 5H86c8.6 0 14.5 5.3 14.5 13s-5.9 13-14.5 13H75V5Zm10.7 21.6c5.7 0 9.7-3.4 9.7-8.6s-4-8.6-9.7-8.6h-5.9v17.2h5.9ZM113.6 5h4.8v26h-4.8V5Zm17.9 0h4.8v21.5H149V31h-17.5V5Z"
+                fill="#f5f7ff"
+              />
+            </svg>
+          </span>
         </a>
-        <nav class="site-nav" aria-label="Primary">
-          <a href="#services">Services</a>
-          <a href="#process">Why Nova</a>
-          <a href="#showcase">Results</a>
-          <a class="nav-cta" href="#contact">Book a Call</a>
+        <nav class="site-nav" aria-label="" data-i18n-attr="aria-label" data-i18n-key="nav.ariaLabel">
+          <a href="#services" data-i18n="nav.services"></a>
+          <a href="#process" data-i18n="nav.process"></a>
+          <a href="#showcase" data-i18n="nav.results"></a>
+          <a class="nav-cta" href="#contact" data-i18n="nav.cta"></a>
+          <div class="language-switcher" role="group" aria-label="" data-i18n-attr="aria-label" data-i18n-key="nav.languageSwitcher">
+            <button class="language-toggle" type="button" data-language="nl">NL</button>
+            <button class="language-toggle" type="button" data-language="en">EN</button>
+          </div>
         </nav>
       </header>
 
       <main id="top">
         <section class="hero section">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Premium digital growth systems</p>
-            <h1>Websites built to look expensive and perform even better.</h1>
-            <p class="hero-text">
-              Nova Digital creates fast, conversion-focused websites for companies
-              that are done losing trust, leads, and momentum to outdated design.
-            </p>
+            <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+            <h1 data-i18n="hero.title"></h1>
+            <p class="hero-text" data-i18n="hero.text"></p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#contact">Get Your Website</a>
-              <a class="button button-secondary" href="#showcase">See the Approach</a>
+              <a class="button button-primary" href="#contact" data-i18n="hero.primaryCta"></a>
+              <a class="button button-secondary" href="#showcase" data-i18n="hero.secondaryCta"></a>
             </div>
-            <ul class="hero-metrics" aria-label="Key proof points">
+            <ul class="hero-metrics" aria-label="" data-i18n-attr="aria-label" data-i18n-key="hero.metricsAriaLabel">
               <li>
-                <strong>90+</strong>
-                <span>Lighthouse-minded builds</span>
+                <strong data-i18n="hero.metrics.0.value"></strong>
+                <span data-i18n="hero.metrics.0.label"></span>
               </li>
               <li>
-                <strong>3s</strong>
-                <span>Decision window to impress visitors</span>
+                <strong data-i18n="hero.metrics.1.value"></strong>
+                <span data-i18n="hero.metrics.1.label"></span>
               </li>
               <li>
-                <strong>1 goal</strong>
-                <span>Turn attention into qualified leads</span>
+                <strong data-i18n="hero.metrics.2.value"></strong>
+                <span data-i18n="hero.metrics.2.label"></span>
               </li>
             </ul>
           </div>
@@ -65,25 +84,25 @@
             <div class="orb orb-two"></div>
             <div class="dashboard-card panel">
               <div class="card-topline">
-                <span>Conversion Engine</span>
-                <span class="status-pill">Live</span>
+                <span data-i18n="hero.card.title"></span>
+                <span class="status-pill" data-i18n="hero.card.status"></span>
               </div>
               <div class="signal-grid">
                 <div>
-                  <span class="signal-label">Speed</span>
-                  <strong>Fast by default</strong>
+                  <span class="signal-label" data-i18n="hero.card.items.0.label"></span>
+                  <strong data-i18n="hero.card.items.0.value"></strong>
                 </div>
                 <div>
-                  <span class="signal-label">Messaging</span>
-                  <strong>Value above the fold</strong>
+                  <span class="signal-label" data-i18n="hero.card.items.1.label"></span>
+                  <strong data-i18n="hero.card.items.1.value"></strong>
                 </div>
                 <div>
-                  <span class="signal-label">UX</span>
-                  <strong>Clear next action</strong>
+                  <span class="signal-label" data-i18n="hero.card.items.2.label"></span>
+                  <strong data-i18n="hero.card.items.2.value"></strong>
                 </div>
                 <div>
-                  <span class="signal-label">Tech</span>
-                  <strong>Modern, scalable stack</strong>
+                  <span class="signal-label" data-i18n="hero.card.items.3.label"></span>
+                  <strong data-i18n="hero.card.items.3.value"></strong>
                 </div>
               </div>
               <div class="chart-row">
@@ -98,97 +117,87 @@
 
         <section class="proof section reveal">
           <div class="proof-intro">
-            <p class="eyebrow">Built for growth-minded teams</p>
-            <h2>The site becomes the sales layer, not just decoration.</h2>
+            <p class="eyebrow" data-i18n="proof.eyebrow"></p>
+            <h2 data-i18n="proof.title"></h2>
           </div>
           <div class="proof-grid">
             <article class="panel proof-card">
-              <span class="proof-value">Sharper positioning</span>
-              <p>
-                Visitors understand what you do, why it matters, and where to click
-                in seconds.
-              </p>
+              <span class="proof-value" data-i18n="proof.items.0.title"></span>
+              <p data-i18n="proof.items.0.text"></p>
             </article>
             <article class="panel proof-card">
-              <span class="proof-value">Faster loading</span>
-              <p>
-                Performance is treated as a brand signal, not a technical afterthought.
-              </p>
+              <span class="proof-value" data-i18n="proof.items.1.title"></span>
+              <p data-i18n="proof.items.1.text"></p>
             </article>
             <article class="panel proof-card">
-              <span class="proof-value">Cleaner conversion path</span>
-              <p>
-                Every section pushes toward trust, clarity, and a concrete next step.
-              </p>
+              <span class="proof-value" data-i18n="proof.items.2.title"></span>
+              <p data-i18n="proof.items.2.text"></p>
             </article>
           </div>
         </section>
 
         <section class="services section" id="services">
           <div class="section-heading reveal">
-            <p class="eyebrow">What we build</p>
-            <h2>Four core offers designed to improve how your business shows up online.</h2>
+            <p class="eyebrow" data-i18n="services.eyebrow"></p>
+            <h2 data-i18n="services.title"></h2>
           </div>
           <div class="services-grid">
             <article class="panel service-card reveal">
-              <h3>Website Development</h3>
-              <p>Custom builds that feel premium, load fast, and scale without friction.</p>
+              <h3 data-i18n="services.items.0.title"></h3>
+              <p data-i18n="services.items.0.text"></p>
             </article>
             <article class="panel service-card reveal">
-              <h3>Performance Optimization</h3>
-              <p>Code, content, and UX tuning that removes drag from the buying journey.</p>
+              <h3 data-i18n="services.items.1.title"></h3>
+              <p data-i18n="services.items.1.text"></p>
             </article>
             <article class="panel service-card reveal">
-              <h3>UX/UI Design</h3>
-              <p>Interfaces with stronger hierarchy, cleaner messaging, and better flow.</p>
+              <h3 data-i18n="services.items.2.title"></h3>
+              <p data-i18n="services.items.2.text"></p>
             </article>
             <article class="panel service-card reveal">
-              <h3>SEO-Ready Builds</h3>
-              <p>Technical foundations that help search visibility without bloating the site.</p>
+              <h3 data-i18n="services.items.3.title"></h3>
+              <p data-i18n="services.items.3.text"></p>
             </article>
           </div>
         </section>
 
         <section class="process section" id="process">
           <div class="section-heading reveal">
-            <p class="eyebrow">Why Nova Digital</p>
-            <h2>No filler. Just strategy, execution, and a website that carries business weight.</h2>
+            <p class="eyebrow" data-i18n="process.eyebrow"></p>
+            <h2 data-i18n="process.title"></h2>
           </div>
           <div class="process-layout">
             <div class="panel process-highlight reveal">
-              <h3>Designed like a product. Built like infrastructure.</h3>
-              <p>
-                Nova Digital combines sharp visual direction with performance-first
-                engineering, so the final result looks high-end and behaves reliably.
-              </p>
+              <h3 data-i18n="process.highlight.title"></h3>
+              <p data-i18n="process.highlight.text"></p>
             </div>
             <div class="process-list">
               <article class="process-item reveal">
                 <span>01</span>
                 <div>
-                  <h3>Speed as a trust signal</h3>
-                  <p>Fast-loading pages communicate precision before a single sentence is read.</p>
+                  <h3 data-i18n="process.items.0.title"></h3>
+                  <p data-i18n="process.items.0.text"></p>
                 </div>
               </article>
               <article class="process-item reveal">
                 <span>02</span>
                 <div>
-                  <h3>Conversion-focused structure</h3>
-                  <p>Each block clarifies the offer and moves visitors toward a decision.</p>
+                  <h3 data-i18n="process.items.1.title"></h3>
+                  <p data-i18n="process.items.1.text"></p>
                 </div>
               </article>
               <article class="process-item reveal">
                 <span>03</span>
                 <div>
-                  <h3>Modern technical stack</h3>
-                  <p>Clean implementation keeps the site flexible, scalable, and easier to maintain.</p>
+                  <h3 data-i18n="process.items.2.title"></h3>
+                  <p data-i18n="process.items.2.text"></p>
                 </div>
               </article>
               <article class="process-item reveal">
                 <span>04</span>
                 <div>
-                  <h3>Straightforward collaboration</h3>
-                  <p>No inflated agency process. Clear scope, high standards, and direct communication.</p>
+                  <h3 data-i18n="process.items.3.title"></h3>
+                  <p data-i18n="process.items.3.text"></p>
                 </div>
               </article>
             </div>
@@ -197,25 +206,19 @@
 
         <section class="showcase section" id="showcase">
           <div class="section-heading reveal">
-            <p class="eyebrow">Outcome</p>
-            <h2>The experience is built to feel credible, premium, and immediately actionable.</h2>
+            <p class="eyebrow" data-i18n="showcase.eyebrow"></p>
+            <h2 data-i18n="showcase.title"></h2>
           </div>
           <div class="showcase-grid">
             <article class="panel showcase-card reveal">
-              <p class="showcase-label">Before</p>
-              <h3>Underperforming digital presence</h3>
-              <p>
-                Generic layouts, weak messaging, slow pages, and too many reasons for
-                prospects to leave.
-              </p>
+              <p class="showcase-label" data-i18n="showcase.items.0.label"></p>
+              <h3 data-i18n="showcase.items.0.title"></h3>
+              <p data-i18n="showcase.items.0.text"></p>
             </article>
             <article class="panel showcase-card showcase-card-accent reveal">
-              <p class="showcase-label">After</p>
-              <h3>High-clarity conversion system</h3>
-              <p>
-                Premium visual language, focused offer hierarchy, and a direct path to
-                contact or booking.
-              </p>
+              <p class="showcase-label" data-i18n="showcase.items.1.label"></p>
+              <h3 data-i18n="showcase.items.1.title"></h3>
+              <p data-i18n="showcase.items.1.text"></p>
             </article>
           </div>
         </section>
@@ -223,18 +226,42 @@
         <section class="cta section reveal" id="contact">
           <div class="panel cta-panel">
             <div>
-              <p class="eyebrow">Start the next version of your website</p>
-              <h2>If your current site is holding back growth, replace it with something that sells.</h2>
+              <p class="eyebrow" data-i18n="cta.eyebrow"></p>
+              <h2 data-i18n="cta.title"></h2>
             </div>
             <div class="cta-actions">
               <a class="button button-primary" href="mailto:hello@novadigital.be">hello@novadigital.be</a>
-              <a class="button button-secondary" href="tel:+32000000000">Book a Discovery Call</a>
+              <a class="button button-secondary" href="tel:+32000000000" data-i18n="cta.secondaryCta"></a>
             </div>
           </div>
         </section>
       </main>
+
+      <footer class="site-footer">
+        <a class="brand brand-footer" href="#top" aria-label="" data-i18n-attr="aria-label" data-i18n-key="brand.ariaLabel">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 172 36" role="img" aria-hidden="true">
+              <defs>
+                <linearGradient id="novaLogoGlowFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#8ff4ff" />
+                  <stop offset="100%" stop-color="#5f8dff" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M18 5 30 31H24.5L13.7 8.5V31H9V5h9ZM38 18c0-7.5 5.7-13.6 13.6-13.6 7.9 0 13.6 6.1 13.6 13.6S59.5 31.6 51.6 31.6C43.7 31.6 38 25.5 38 18Zm4.9 0c0 5.2 3.6 9.1 8.7 9.1s8.7-3.9 8.7-9.1-3.6-9.1-8.7-9.1-8.7 3.9-8.7 9.1Z"
+                fill="url(#novaLogoGlowFooter)"
+              />
+              <path
+                d="M75 5H86c8.6 0 14.5 5.3 14.5 13s-5.9 13-14.5 13H75V5Zm10.7 21.6c5.7 0 9.7-3.4 9.7-8.6s-4-8.6-9.7-8.6h-5.9v17.2h5.9ZM113.6 5h4.8v26h-4.8V5Zm17.9 0h4.8v21.5H149V31h-17.5V5Z"
+                fill="#f5f7ff"
+              />
+            </svg>
+          </span>
+        </a>
+        <p class="footer-copy" data-i18n="footer.copy"></p>
+      </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

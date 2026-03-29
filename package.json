@@ -1,0 +1,29 @@
+{
+  "name": "nova-digital-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "lint:html": "htmlhint index.html",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:js": "eslint .",
+    "build": "node ./scripts/build.mjs",
+    "preview": "http-server ./dist -p 4173 -c-1",
+    "test": "npm run test:unit && npm run build && npm run test:uat",
+    "test:unit": "vitest run",
+    "test:uat": "playwright test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@playwright/test": "^1.52.0",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0",
+    "htmlhint": "^1.6.3",
+    "http-server": "^14.1.1",
+    "jsdom": "^26.0.0",
+    "stylelint": "^16.17.0",
+    "stylelint-config-standard": "^38.0.0",
+    "vitest": "^3.1.1"
+  }
+}
