@@ -10,6 +10,7 @@
     "lint:js": "eslint .",
     "build": "node ./scripts/build.mjs",
     "preview": "http-server ./dist -p 4173 -c-1",
+    "smoke:live": "node ./scripts/smoke-live.mjs",
     "test": "npm run test:unit && npm run build && npm run test:uat",
     "test:unit": "vitest run",
     "test:uat": "playwright test"
