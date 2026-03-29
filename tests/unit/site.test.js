@@ -86,4 +86,32 @@ describe("site translations", () => {
       true
     );
   });
+
+  it("ships Dutch fallback copy in the static HTML", () => {
+    expect(dom.window.document.documentElement.lang).toBe("nl");
+    expect(dom.window.document.title).toBe("Nova Digital");
+    expect(dom.window.document.querySelector(".hero-copy h1")?.textContent).toBe(
+      "Websites die premium aanvoelen en nog beter presteren."
+    );
+    expect(dom.window.document.querySelector('[data-i18n="nav.services"]')?.textContent).toBe(
+      "Diensten"
+    );
+    expect(
+      dom.window.document
+        .querySelector('meta[name="description"]')
+        ?.getAttribute("content")
+    ).toBe(
+      "Nova Digital ontwerpt en bouwt premium websites die snel laden, vertrouwen opbouwen en meer kwalitatieve leads opleveren."
+    );
+
+    dom.window.document.querySelectorAll("[data-i18n]").forEach((node) => {
+      expect(node.textContent?.trim().length).toBeGreaterThan(0);
+    });
+
+    dom.window.document.querySelectorAll("[data-i18n-attr]").forEach((node) => {
+      const attribute = node.getAttribute("data-i18n-attr");
+      expect(attribute).toBeTruthy();
+      expect(node.getAttribute(attribute ?? "")?.trim().length).toBeGreaterThan(0);
+    });
+  });
 });
